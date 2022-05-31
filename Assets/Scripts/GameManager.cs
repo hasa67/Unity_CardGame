@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<Card> deck = new List<Card>();
+    public Transform[] cardSlots;
+    public bool[] availableCardSlots;
 
-    // Update is called once per frame
-    void Update()
+    public void DrawCards()
     {
-        
+        if (deck.Count >= 1)
+        {
+            Card randCard = deck[Random.Range(0, deck.Count)];
+        }
     }
 }
